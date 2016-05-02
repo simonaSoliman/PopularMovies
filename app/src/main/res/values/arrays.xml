@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--display it in screen!-->
+    <string-array name="sort_pref_sort_options">
+        <item>@string/pref_sort_label_popular</item>
+        <item>@string/pref_sort_label_top_rated</item>
+        <item>@string/pref_show_fav</item>
+    </string-array>
+    <!--saved from preference!-->
+    <string-array name="pref_sort_values">
+        <item>@string/action_sort_by_popular</item>
+        <item>@string/action_sort_by_rating</item>
+        <item>@string/action_show_fav</item>
+
+    </string-array>
+</resources>

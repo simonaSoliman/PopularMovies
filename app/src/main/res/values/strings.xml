@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+    <string name="action_settings">Settings</string>
+    <!-- Menu label to fetch updated weather info from the server -->
+    <string name="action_refresh" translatable="false">Refresh</string>
+    <string name="action_sort_by_popular">popular</string>
+    <string name="action_sort_by_rating">top_rated</string>
+    <string name="action_show_fav">fav_movies</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="sort_movies">Sort Movies</string>
+    <string name="SORT_KEY">selected sort</string>
+    <string name="pref_sort_label_popular">sort by popular</string>
+    <string name="pref_sort_label_top_rated">sort by rate</string>
+    <string name="pref_show_fav">my favourite movies</string>
+
+</resources>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.simona.popularmovies.DetailActivityFragment"
+    android:background="@color/common_signin_btn_light_text_disabled">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="25dp"
+            android:id="@+id/original_title"
+            />
+        <ImageView
+            android:layout_below="@+id/original_title"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:id="@+id/image_view"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:id="@+id/release_date"
+            android:layout_toRightOf="@+id/image_view"
+            android:layout_below="@+id/original_title"
+
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:id="@+id/vote_average"
+            android:layout_below="@+id/release_date"
+            android:layout_toRightOf="@+id/image_view"
+
+            />
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="190dp"
+            android:id="@+id/overview"
+
+            android:layout_below="@+id/image_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/radio"
+            android:layout_below="@+id/vote_average"
+            />
+        <ToggleButton
+            android:id="@+id/radio"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/vote_average"
+            android:layout_toRightOf="@+id/image_view"
+            android:background="@drawable/star"
+            />
+        <LinearLayout
+            android:id="@+id/t_and_r"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/overview">
+        <com.linearlistview.LinearListView
+            android:id="@+id/listview_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listview_trailer"
+            />
+
+        <com.linearlistview.LinearListView
+            android:id="@+id/listview_trailer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>
